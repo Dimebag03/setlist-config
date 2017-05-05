@@ -18,7 +18,7 @@
 	var setList = new SetList();
 
 	setList.form.addEventListener('submit', function (e) {
-        e.preventDefault();
+		e.preventDefault();
 
 		setList.addMusicToList(setList.musicName.value);
 		setList.musicName.focus();
