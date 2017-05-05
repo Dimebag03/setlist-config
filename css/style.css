@@ -1,0 +1,74 @@
+.content {
+	color: #333;
+	width: 960px;
+	max-width: 90%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 10px;
+	border: 0;
+	border-radius: 2px;
+	font-size: 22px;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+.btn-primary {
+	color: #4285f4;
+	background-color: #FFF;
+	border: 2px solid #4285f4;
+	transition: 0.2s;
+}
+
+.btn-primary:hover {
+	color: #FFF;
+	background-color: #4285f4;
+}
+
+.form input {
+	padding: 10px;
+	font-size: 22px;
+	border: 1px solid #E4E4E4;
+	border-radius: 2px;
+	width: 74%;
+	box-sizing: border-box;
+}
+
+.form input:focus {
+	box-shadow: 0 0 0 1px #4285f4;
+}
+
+.setlist-style li {
+	font-size: 30px;
+	padding: 10px 0px;
+	list-style: inherit;
+	/*list-style: square;
+	list-style-position: inside;*/
+}
+
+@media print {
+
+	.form {
+		display: none;
+	}
+
+	#musicList {
+		display: block;
+	}
+	
+}
