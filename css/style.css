@@ -53,25 +53,36 @@ h1 {
 	box-shadow: 0 0 0 1px #4285f4;
 }
 
+.setlist-style {
+	padding: 0;
+	list-style-position: inside;
+}
+
 .setlist-style li {
+	padding: 10px;
 	font-size: 30px;
-	padding: 10px 0px;
+	border-radius: 2px;
 	list-style: inherit;
 	position: relative;
 }
 
+.setlist-style li:hover {
+	background-color: #FBFBFB;
+}
+
 .setlist-style li button.rm {
+	display: none;
     position: absolute;
 	cursor: pointer;
     color: #EA4335;
-    background: #FFF;
+	background-color: #FBFBFB;
     border: 1px solid #EA4335;
     font-size: 20px;
     width: 35px;
     height: 35px;
     text-align: center;
     border-radius: 2px;
-    right: 0;
+    right: 10px;
     top: 10px;
 	transition: 0.2s;
 }
@@ -79,6 +90,10 @@ h1 {
 .setlist-style li button.rm:hover {
     color: #FFF;
     background: #EA4335;
+}
+
+.setlist-style li:hover button.rm {
+	display: block;
 }
 
 @media print {
