@@ -30,18 +30,16 @@
 	let setList = new SetList();
 	let body = document.getElementsByTagName('body')[0];
 
-	setList.form.addEventListener('submit', 
-		event => {
-			event.preventDefault();
+	setList.form.addEventListener('submit', event => {
+		event.preventDefault();
 
-			setList.addMusicToList(setList.musicName.value);
-			setList.musicName.focus();
-		});
+		setList.addMusicToList(setList.musicName.value);
+		setList.musicName.focus();
+	});
 
-	body.addEventListener('click', 
-		event => {
-			if (event.target.id === 'rmFromList')
-				setList.rmMusicFromList(event.target);
-		});
+	body.addEventListener('click', event => {
+		if (event.target.id === 'rmFromList')
+			setList.rmMusicFromList(event.target);
+	});
 
 }());
