@@ -1,5 +1,5 @@
 .content {
-	color: #333;
+	color: #212121;
 	width: 960px;
 	max-width: 90%;
 	margin: 0 auto;
@@ -31,13 +31,13 @@ h1 {
 .btn-primary {
 	color: #4285f4;
 	background-color: #FFF;
-	border: 2px solid #4285f4;
+	border: 2px solid #4285F4;
 	transition: 0.2s;
 }
 
 .btn-primary:hover {
 	color: #FFF;
-	background-color: #4285f4;
+	background-color: #4285F4;
 }
 
 .form input {
@@ -50,15 +50,13 @@ h1 {
 }
 
 .form input:focus {
-	box-shadow: 0 0 0 1px #4285f4;
+	box-shadow: 0 0 0 1px #4285F4;
 }
 
 .setlist-style li {
 	font-size: 30px;
 	padding: 10px 0px;
 	list-style: inherit;
-	/*list-style: square;
-	list-style-position: inside;*/
 }
 
 @media print {
@@ -70,5 +68,5 @@ h1 {
 	#musicList {
 		display: block;
 	}
-	
+
 }
