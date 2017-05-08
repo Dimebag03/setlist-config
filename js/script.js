@@ -5,7 +5,7 @@
 		this.musicName = document.getElementById('musicName');
 		this.musicList = document.getElementById('musicList');
 
-		this.addMusicToList = function (music) {
+		this.addMusicToList = music => {
 			if (!music) return;
 
 			let li = document.createElement('li');
@@ -22,7 +22,7 @@
 			musicName.value = '';
 		}
 
-		this.rmMusicFromList = function (element) {
+		this.rmMusicFromList = element => {
 			element.parentElement.remove();
 		}
 	}
@@ -31,15 +31,15 @@
 	let body = document.getElementsByTagName('body')[0];
 
 	setList.form.addEventListener('submit', 
-		function(e) {
-			e.preventDefault();
+		event => {
+			event.preventDefault();
 
 			setList.addMusicToList(setList.musicName.value);
 			setList.musicName.focus();
 		});
 
 	body.addEventListener('click', 
-		function(event) {
+		event => {
 			if (event.target.id === 'rmFromList')
 				setList.rmMusicFromList(event.target);
 		});
